@@ -1,0 +1,8 @@
+.clipboard-container {
+  background-image: url("./images/bg-header-mobile.png");
+}
+@media only screen and (min-width: 768px) {
+  .clipboard-container {
+    background-image: url("./images/bg-header-desktop.png");
+  }
+}

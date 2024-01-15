@@ -2,10 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply flex flex-col min-h-screen;
-};
+@layer base {
+  body {
+    @apply flex flex-col min-h-screen;
+    font-family: "Roboto", sans-serif;
+  };
+}
 
-.section-container {
-  @apply min-h-[50vh] flex items-center justify-center p-5;
+@layer components {
+  .section-container {
+    @apply min-h-[50vh] flex items-center justify-center p-5;
+  }
+  /* clipboard */
+  .button-clipboard {
+    @apply py-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80;
+  }
+  .button-clipboard.button-clipboard--primary {
+    @apply  bg-strongCyan;
+  }
+  .button-clipboard.button-clipboard--secondary {
+    @apply  bg-lightBlue;
+  }
+  .clipboard-h3 {
+    @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
+  }
+  .clipboard-h5 {
+    @apply mb-2 text-2xl font-bold text-darkGrayishBlue;
+  }
+  .clipboard-body {
+    @apply text-xl leading-9 text-center text-grayishBlue;
+  }
 }
