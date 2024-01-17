@@ -7,10 +7,12 @@ import ClipboardAnywhere from './clipboard-anywhere'
 import ClipboardSupercharge from './clipboard-supercharge'
 import ClipboardBottom from './clipboard-bottom'
 import ClipboardFooter from './clipboard-footer'
+import TheHeader from '../the-header'
 
 export default function Clipboard() {
   return (
-    <div className="clipboard-container text-strongCyan font-sans bg-no-repeat bg-contain">
+    <div className="clipboard-container font-sans bg-no-repeat bg-contain">
+      <TheHeader />
       <ClipboardHero />
       <ClipboardSnippets />
       <ClipboardFeatures />

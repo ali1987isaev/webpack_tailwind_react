@@ -4,13 +4,19 @@ const projects = [
   {
     title: 'clipboard',
     url: '/clipboard',
+  },
+  {
+    title: 'loopstudio',
+    url: '/loop-studio'
   }
 ]
 
-export default function Hero() {
+export default function TheHeader() {
   return (
     <div className='flex items-center justify-between w-full sticky top-0 z-50 p-5 bg-white'>
-      <h2 className='text-zinc-800 font-bold text-center uppercase'>React + Tailwindcss + Webpack</h2>
+      <h2 className='text-zinc-800 font-bold text-center uppercase'>
+        <a href="/">React + Tailwindcss + Webpack</a>
+      </h2>
       <ul className='flex items-center gap-5'>
         {
           !!projects.length && projects.map(({title, url}) => (

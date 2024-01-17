@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import './fonts.css';
 import './main.css';
-import Hero from './components/hero';
+import TheHeader from './components/the-header';
 import EmailSubscribe from './components/email-subscribe';
 import PricingGrids from './components/pricing-grids';
 import ProductModal from './components/product-modal';
@@ -14,11 +14,12 @@ import ImageGallery from './components/image-gallery';
 import LoginModal from './components/login-modal';
 import Clipboard from './components/clipboard';
 import ErrorPage from './components/error-page';
+import LoopStudio from './components/loopstudio';
 
 const App = () => {
   return (
     <>
-      <Hero />
+      <TheHeader />
       <LoginModal />
       <EmailSubscribe />
       <PricingGrids />
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
     path: "/clipboard",
     element: <Clipboard />,
   },
+  {
+    path: '/loop-studio',
+    element: <LoopStudio />,
+  }
 ]);
 
 const root = createRoot(document.getElementById('root'));
