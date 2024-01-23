@@ -35,12 +35,6 @@ const allTabs = [
 export default function Bookmark() {
   const [tab, setTab] = useState('Simple Bookmarking');
 
-  useEffect(() => {
-    if (tab !== '') {
-      console.log('tab', tab)
-    }
-  }, [tab]);
-  
   return (
     <div className="container p-5 mx-auto">
       <Tabs tab={tab} setTab={setTab}/>

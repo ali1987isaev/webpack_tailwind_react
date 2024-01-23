@@ -18,7 +18,8 @@ export default function Faq() {
       title: "What about other Chromium browsers",
       copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo rem nobis nulla vel voluptate tenetur, ad odit, in nisi numquam pariatur, animi iste libero expedita quidem ipsa fugit! Qui, similique!",
     }
-  ]
+  ];
+  
   return (
     <div className="py-32">
       <h2 className="mb-6 text-3xl font-semibold text-center md:text-4xl">
