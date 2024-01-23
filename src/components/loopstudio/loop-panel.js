@@ -8,7 +8,7 @@ export default function LoopPanel({ showMenu, menuItems }) {
           {
             !!menuItems.length && !!showMenu && menuItems.map(item => (
               <li key={item} className={`${showMenu ? 'opacity-100' : 'opacity-0'}`}>
-                <a href="#" className="text-white text-lg uppercase font-josefin font-light">{item}</a>
+                <a href={item === 'Home' ? '/' : '#'} className="text-white text-lg uppercase font-josefin font-light">{item}</a>
               </li>
             ))
           }

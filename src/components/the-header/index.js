@@ -7,7 +7,15 @@ const projects = [
   },
   {
     title: 'loopstudio',
-    url: '/loop-studio'
+    url: '/loop-studio',
+  },
+  {
+    title: 'fylo',
+    url: '/fylo',
+  },
+  {
+    title: 'bookmark',
+    url: '/bookmark',
   }
 ]
 

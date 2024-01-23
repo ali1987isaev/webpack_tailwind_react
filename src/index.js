@@ -15,6 +15,8 @@ import LoginModal from './components/login-modal';
 import Clipboard from './components/clipboard';
 import ErrorPage from './components/error-page';
 import LoopStudio from './components/loopstudio';
+import Fylo from './components/fylo';
+import Bookmark from './components/bookmark';
 
 const App = () => {
   return (
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
   {
     path: '/loop-studio',
     element: <LoopStudio />,
+  },
+  {
+    path: '/fylo',
+    element: <Fylo />,
+  },
+  {
+    path: '/bookmark',
+    element: <Bookmark />
   }
 ]);
 

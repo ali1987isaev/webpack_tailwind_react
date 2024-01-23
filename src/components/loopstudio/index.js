@@ -38,12 +38,12 @@ export default function LoopStudio() {
   const [showMenu, setShowMenu] = useState(false)
   return (
     <div className={`relative transition-all duration-200 ease-in ${showMenu ? 'overflow-hidden max-h-screen' : ''}`}>
-      <LoopHeader menuItems={menuItems} showMenu={showMenu} setShowMenu={setShowMenu} />
+      <LoopHeader {...{menuItems, showMenu, setShowMenu}} />
       <LoopHero />
       <LoopInteractive />
       <LoopCreations />
-      <LoopFooter menuItems={menuItems} cosialIcons={cosialIcons} />
-      <LoopPanel showMenu={showMenu} menuItems={menuItems} />
+      <LoopFooter {...{menuItems, cosialIcons}} />
+      <LoopPanel {...{showMenu, menuItems}} />
     </div>
   )
 }
